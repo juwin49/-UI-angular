@@ -1,0 +1,356 @@
+/* dialog start */
+.dialog-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: none;
+}
+
+.dialog {
+    background-color: white;
+    width: 350px;
+    padding: 17px;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 100px;
+    margin-left: -192px;
+    overflow: hidden;
+    z-index: 2000;
+    display: none;
+}
+
+.dialog h2 {
+    font-size: 17px;
+    height: 35px;
+    margin-bottom: 17px;
+    text-align: left;
+    font-weight: 400;
+    border-bottom: 2px solid #e5e5e5;
+    cursor: move;
+    position: relative;
+    display: none;
+}
+
+.dialog h2 .close{
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+    cursor: pointer;
+    color: #bababa;
+}
+
+.dialog h2 .close:hover{
+    color: #BE5151;
+}
+
+.dialog .content {
+    color: #797979;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    margin: 17px 0 0 0;
+    line-height: normal;
+}
+
+.dialog .btnpos {
+    position: relative;
+    padding: 0 45px;
+    margin: 17px 5px 0 5px;
+}
+
+.dialog .icon {
+    width: 60px;
+    height: 60px;
+    border: 4px solid gray;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: content-box;
+    display: none;
+}
+
+.dialog .icon.error {
+    border-color: #F27474;
+    -webkit-animation: anim-icon-error 0.5s;
+    -moz-animation: anim-icon-error 0.5s;
+    animation: anim-icon-error 0.5s;
+}
+
+.dialog .icon.error .x-mark {
+    position: relative;
+    display: block;
+    -webkit-animation: anim-xmark 0.5s;
+    -moz-animation: anim-xmark 0.5s;
+    animation: anim-xmark 0.5s;
+}
+
+.dialog .icon.error .line {
+    position: absolute;
+    height: 5px;
+    width: 40px;
+    background: #F27474;
+    display: block;
+    top: 28px;
+    border-radius: 2px;
+}
+
+.dialog .icon.error .line.left {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: 10px;
+}
+
+.dialog .icon.error .line.right {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    left: 10px;
+}
+
+.dialog .icon.info {
+    border-color: #C9DAE1;
+}
+
+.dialog .icon.info:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 29px;
+    left: 50%;
+    bottom: 10px;
+    border-radius: 2px;
+    margin-left: -2px;
+    background-color: #C9DAE1;
+}
+
+.dialog .icon.info:after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin-left: -3px;
+    left: 50%;
+    top: 10px;
+    background-color: #C9DAE1;
+}
+
+.dialog .icon.warn {
+    border-color: #F8BB86;
+    -webkit-animation: pulse-warning 0.8s infinite alternate;
+    -moz-animation: pulse-warning 0.8s infinite alternate;
+    animation: pulse-warning 0.8s infinite alternate;
+}
+
+.dialog .icon.warn .body {
+    position: absolute;
+    width: 5px;
+    height: 30px;
+    left: 50%;
+    top: 10px;
+    border-radius: 2px;
+    margin-left: -2px;
+    background-color: #F8BB86;
+    -webkit-animation: pulse-warningins 0.8s infinite alternate;
+    -moz-animation: pulse-warningins 0.8s infinite alternate;
+    animation: pulse-warningins 0.8s infinite alternate;
+}
+
+.dialog .icon.warn .dot {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin-left: -3px;
+    bottom: 10px;
+    left: 50%;
+    background-color: #F8BB86;
+    -webkit-animation: pulse-warningins 0.8s infinite alternate;
+    -moz-animation: pulse-warningins 0.8s infinite alternate;
+    animation: pulse-warningins 0.8s infinite alternate;
+}
+
+.dialog .icon.succ {
+    border-color: #A5DC86;
+}
+
+.dialog .icon.succ:before,
+.dialog .icon.succ:after {
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    width: 60px;
+    height: 120px;
+    background: white;
+    transform: rotate(45deg);
+}
+
+.dialog .icon.succ::before {
+    border-radius: 120px 0 0 120px;
+    top: -20px;
+    left: -40px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 60px 60px;
+    transform-origin: 60px 60px;
+}
+
+.dialog .icon.succ::after {
+    border-radius: 0 120px 120px 0;
+    top: -21px;
+    left: 25px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0px 60px;
+    transform-origin: 0px 60px;
+
+    -webkit-animation: rotate-placeholder 4.25s ease-in;
+    -moz-animation: rotate-placeholder 4.25s ease-in;
+    animation: rotate-placeholder 4.25s ease-in;
+}
+
+.dialog .icon.succ .line {
+    height: 5px;
+    background-color: #A5DC86;
+    display: block;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 2;
+}
+
+.dialog .icon.succ .line.tip {
+    width: 20px;
+    left: 10px;
+    top: 35px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+    -webkit-animation: anim-success-tip 0.75s;
+    -moz-animation: anim-success-tip 0.75s;
+    animation: anim-success-tip 0.75s;
+}
+
+.dialog .icon.succ .line.long {
+    width: 35px;
+    right: 5px;
+    top: 30px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: anim-success-long 0.75s;
+    -moz-animation: anim-success-long 0.75s;
+    animation: anim-success-long 0.75s;
+}
+
+.dialog .icon.succ .placeholder {
+    width: 60px;
+    height: 60px;
+    border: 4px solid rgba(165, 220, 134, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    z-index: 2;
+}
+
+.dialog .icon.succ .fix {
+    width: 5px;
+    height: 90px;
+    background-color: white;
+    position: absolute;
+    left: 20px;
+    top: -5px;
+    z-index: 1;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.dialog .process {
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+    margin: 0 auto;
+    background: white;
+    text-align: center;
+    position: relative;
+}
+
+.dialog .process .process-container {
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.dialog .process .process-container .animated-process {
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00A1CB;
+    border-radius: 50em;
+}
+
+.dialog .process .process-container .animated-process:after {
+    content: '';
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50em;
+    background: white;
+    -webkit-animation: process-inside-white 1s ease-in-out infinite;
+    -ms-animation: process-inside-white 1s ease-in-out infinite;
+    animation: process-inside-white 1s ease-in-out infinite;
+}
+
+.dialog .process .process-container .animated-process:before {
+    content: '';
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border-radius: 50em;
+    background: #00A1CB;
+    -webkit-animation: process-inside-blue 1s ease-in-out infinite;
+    -ms-animation: process-inside-blue 1s ease-in-out infinite;
+    animation: process-inside-blue 1s ease-in-out infinite;
+}
+
+.show-dialog {
+    display: block;
+    -webkit-animation: show-dialog 0.3s forwards;
+    -moz-animation: show-dialog 0.3s forwards;
+    animation: show-dialog 0.3s forwards;
+}
+
+.hide-dialog {
+    -webkit-animation: hide-dialog 0.2s forwards;
+    -moz-animation: hide-dialog 0.2s forwards;
+    animation: hide-dialog 0.2s forwards;
+}
+
+/* dialog end */

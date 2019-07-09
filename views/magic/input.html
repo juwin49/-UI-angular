@@ -1,0 +1,16 @@
+<input class="input" placeholder="待输入..."/>
+<input class="input warn" placeholder="警告信息..."/>
+<input class="input err" placeholder="错误信息..."/>
+<input class="input succ" placeholder="正确信息..." />
+<input class="input" placeholder="禁止输入..." disabled/><br><br>
+<input class="input" placeholder="必填输入框..." required/>
+<br><br>
+<textarea class="input" required></textarea><br/><br>
+<label class="label">请输入：</label><input class="input" placeholder="麻烦输点什么..."/><a class="button"><i
+        class="i dashboard"></i>搜索</a>
+<hr/>
+具体日期：<input type="text" class="input" ng-model="datetime" datetime timeoption="option"/><span ng-bind="datetime"></span><br/><br/>
+日期：<input type="text" class="input" ng-model="date" date /><span ng-bind="date"></span><br/><br/>
+时间：<input type="text" class="input" ng-model="time" time /><span ng-bind="time"></span><br/><br/>
+开始时间：<input type="text" class="input" id="start_time" relate-end="#end_time" date />
+结束时间：<input type="text" class="input" id="end_time" relate-start="#start_time" date />

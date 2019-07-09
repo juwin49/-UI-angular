@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html ng-app="sanwik">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title ng-bind="title"></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/icon.css"/>
+    <link rel="stylesheet" type="text/css" href="css/anim.css"/>
+    <link rel="stylesheet" type="text/css" href="css/dialog.css"/>
+    <link rel="stylesheet" type="text/css" href="css/datetime.css"/>
+    <link rel="stylesheet" type="text/css" href="css/toastr.css"/>
+    <link rel="stylesheet" type="text/css" href="css/app.css"/>
+
+</head>
+<body ng-class="{fix:fix}">
+<div class="headbar" ng-class="{min:min}">
+    <div class="breadcrumb"></div>
+    <div class="infobox">
+        <div class="btn">
+            <i class="i fullscreen"></i>
+        </div>
+        <div class="btn">
+            <i class="i ring on"></i><i class="num">3</i>
+            <ul>
+                <li><a href="#" class="anim">机器"100558"发生故障</a></li>
+                <li><a href="#" class="anim">机器"100556"发生故障</a></li>
+                <li><a href="#" class="anim">机器"100557"发生故障</a></li>
+            </ul>
+        </div>
+        <div class="avatar">
+            <span class="avatar_img"><img ng-if="avatar" ng-src="{{avatar}}" width="30" height="30"/></span><span
+                class="avatar_name"></span>
+            <ul>
+                <li><a href="#" class="anim"><i class="i setting"></i>修改头像</a></li>
+                <li><a href="#/login" class="anim"><i class="i lock"></i>锁屏</a></li>
+                <li><a href="#/login" class="anim"><i class="i logout"></i>退出系统</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="sidebar unsel" ng-class="{min:min}">
+    <div class="logo"></div>
+    <div class="scroll" style="position: relative;">
+        <div menu></div>
+    </div>
+    <div class="toggle">
+        <a class="i collapse anim" ng-class="{off:min}" ng-click="min=!min"></a>
+    </div>
+</div>
+<div class="content" ng-class="{min:min}">
+    <div class="loading" ng-class="{active:loading}"><span class="bar"></span></div>
+    <div class="view" ng-class="{animate:animate}" ng-view></div>
+</div>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/jquery.scroll.min.js"></script>
+<script src="lib/jquery.datetime.min.js"></script>
+<script src="lib/angular.min.js"></script>
+<script src="lib/angular.route.min.js"></script>
+<script src="lib/angular.cookies.min.js"></script>
+<script src="lib/angular.animate.min.js"></script>
+<script src="lib/angular.resource.min.js"></script>
+<script src="lib/angular.messages.min.js"></script>
+<script src="lib/angular.sanitize.min.js"></script>
+<script src="lib/angular.locale.zh-cn.js"></script>
+<script src="lib/raphael.min.js"></script>
+<script src="lib/morris.min.js"></script>
+<script src="lib/toastr.min.js"></script>
+<script src="lib/loadscript.min.js"></script>
+<script src="js/define.js"></script>
+<script src="js/config.js"></script>
+<script src="js/filter.js"></script>
+<script src="js/directive/menu.js"></script>
+<script src="js/directive/contextmenu.js"></script>
+<script src="js/directive/tab.js"></script>
+<script src="js/directive/select.js"></script>
+<script src="js/directive/dragable.js"></script>
+<script src="js/directive/match.js"></script>
+<script src="js/directive/table.js"></script>
+<script src="js/directive/breadcrumb.js"></script>
+<script src="js/directive/datetime.js"></script>
+<script src="js/directive/inputmask.js"></script>
+<script src="js/directive/fullscreen.js"></script>
+<script src="js/directive/fixbar.js"></script>
+<script src="js/service/dialog.js"></script>
+<script src="js/main.js"></script>
+<script src="views/login.js"></script>
+<script src="views/dashboard.js"></script>
+<script src="views/user/lockmng.js"></script>
+<script src="views/user/power.js"></script>
+<script src="views/magic/button.js"></script>
+<script src="views/magic/dialog.js"></script>
+<script src="views/magic/tab.js"></script>
+<script src="views/magic/input.js"></script>
+<script src="views/magic/notify.js"></script>
+<script src="views/magic/modal.js"></script>
+<script src="views/magic/table.js"></script>
+<script src="views/magic/select.js"></script>
+<script src="views/magic/switch.js"></script>
+<script src="views/magic/form.js"></script>
+</body>
+</html>

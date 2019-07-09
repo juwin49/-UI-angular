@@ -1,0 +1,77 @@
+<form name="form" class="form">
+    <div class="line">
+        <label class="label">用户名:</label>
+
+        <div class="group">
+            <input class="input" ng-model="user.name" type="password" name="name" required ng-minlength="5"
+                   ng-maxlength="6"/><span ng-messages="form.name.$error" ng-show="!form.name.$pristine">
+            <i ng-message="required">请输入用户名!</i>
+            <i ng-message="minlength">用户名至少5个字符!</i>
+            <i ng-message="maxlength">用户名最多6个字符!</i>
+        </span>
+        </div>
+    </div>
+
+    <div class="line">
+        <label class="label">是否发布:</label>
+            <label class="switch"><input type="checkbox" ng-model="user.publish"/><i></i></label>
+    </div>
+    <div class="line">
+        <label class="label">水果:</label>
+        <div class="select" name="fruit" ng-model="user.fruit" ng-options="fruits" ng-options-text="text" ng-options-value="value" ng-default-text="请选择水果" required></div><span ng-messages="form.fruit.$error"><i
+                ng-message="required">请选择水果</i></span>
+    </div>
+    <div class="line">
+        <label class="label">邮箱:</label><div class="group">
+        <input class="input" type="email" name="email" ng-model="user.email"/><span ng-messages="form.email.$error" ng-show="!form.email.$pristine"><i
+            ng-message="email">邮箱格式错误</i></span></div>
+    </div>
+    <div class="line">
+        <label class="label">日期:</label><input type="text" class="input" ng-model="user.date" date/>
+    </div>
+
+    <div class="line">
+        <label class="label">百分比:</label><input class="input" name="age" ng-model="user.percentage"
+                                                ui-percentage-mask="2"/>
+    </div>
+
+    <div class="line">
+        <label class="label">负数:</label><input class="input" name="age" ng-model="user.negative" ui-number-mask="2"
+                                               ui-negative-number ui-hide-group-sep/>
+    </div>
+
+    <div class="line">
+        <label class="label">年龄:</label><input class="input" name="age" ng-model="user.age" ui-number-mask="0" max="200"
+                                               ui-hide-group-sep/><span ng-messages="form.age.$error" ng-show="!form.age.$pristine"><i
+            ng-message="max">年龄不能超过200岁</i></span>
+    </div>
+
+    <div class="line">
+        <label class="label">薪酬:</label><input class="input" name="money" ng-model="user.money" ui-money-mask="2"/>
+    </div>
+
+    <div class="line">
+        <label class="label">IP地址:</label><input class="input" name="ip" ng-model="user.ip"/>
+    </div>
+
+    <div class="line">
+        <label class="label">网址:</label><input
+            class="input" type="url" name="url" ng-model="user.url"/><span ng-messages="form.url.$error"><i ng-message="url">网址格式错误</i></span>
+    </div>
+
+    <div class="line">
+        <label class="label">密码:</label><input class="input" ng-model="user.password" type="password"
+                                                         name="password" required/><span ng-messages="form.password.$error" ng-show="!form.password.$pristine"><i
+            ng-message="required">请输入密码</i></span>
+    </div>
+
+    <div class="line">
+        <label class="label">确认密码:</label><input
+            class="input" ng-model="user.passwordConfirm" type="password" match="user.password" name="myConfirmField"/><span ng-messages="form.myConfirmField.$error"><i ng-message="match">密码不一致</i></span>
+    </div>
+
+    <div class="line anim" fixbar>
+        <label class="label"></label><button class="button" ng-disabled="!form.$valid" ng-click="save()"><i class="i save"></i>保存</button>{{user}}
+    </div>
+
+</form>

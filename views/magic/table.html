@@ -1,0 +1,11 @@
+<div class="toolbar">
+    <div class="col left">
+        <label class="label">部门：</label> <input type="text" class="input" ng-model="condition.dept"/>
+        <label class="label">加入时间：</label><input type="text" class="input" ng-model="condition.time" date/>
+        <label class="switch"><span>是否激活：</span><input type="checkbox" ng-model="condition.isactive"/><i></i></label>
+        <a class="button" ng-click="search()"><i class="i search"></i>搜索</a>
+        <a class="button cancel" ng-click="reload()"><i class="i refresh"></i>刷新</a>
+    </div>
+    <div class="col right"><a class="button" ng-click="add()"><i class="i add"></i>添加设备</a></div>
+</div>
+<div data-option="option" table></div>

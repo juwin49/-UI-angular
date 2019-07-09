@@ -1,0 +1,15 @@
+<div class="loginpanel">
+    <div class="loginbox">
+        <div class="logo"></div>
+        <form name="form">
+            <img ng-src="{{avatar}}" class="avatar">
+            <div class="username_mask" ng-if="!userinfo"><input class="input" ng-model="info.username" placeholder="请输入用户名" type="text" ng-disabled="loading" ng-focus="focus()" required nomask /></div>
+            <div class="password_mask"><input class="input" ng-model="info.password" placeholder="请输入密码" type="password" autocomplete="off" ng-disabled="loading" ng-focus="focus()" required nomask /></div>
+            <div class="button_mask">
+                <button class="button" ng-disabled="!form.$valid" ng-click="login()"><i class="i login"></i>登陆系统</button>
+                <div class="logining" ng-show="loading"><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="loginerr" ng-show="fail">用户名或者密码错误，登陆失败!</div>
+        </form>
+    </div>
+</div>

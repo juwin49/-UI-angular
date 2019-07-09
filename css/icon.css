@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot');
+    src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('../fonts/icomoon.svg#icomoon') format('svg'), url('../fonts/icomoon.woff') format('woff'), url('../fonts/icomoon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.i {
+    font-family: "icomoon";
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+.i.magic:before {
+    content: '\f0d0';
+}
+
+.i.dashboard:before {
+    content: '\f0e4';
+}
+
+.i.user:before {
+    content: '\e002';
+}
+
+.i.collapse:before {
+    content: '\f100';
+}
+
+.i.arrow:before {
+    content: '\f107';
+}
+
+.i.close:before {
+    content: '\f05c';
+}
+
+.i.refresh:before {
+    content: '\f021';
+}
+
+.i.search:before {
+    content: '\f002';
+}
+
+.i.add:before {
+    content: '\f067';
+}
+
+.i.del:before {
+    content: '\f014';
+}
+
+.i.cancel:before {
+    content: '\f05e';
+}
+
+.i.sure:before {
+    content: '\f05d';
+}
+
+.i.time:before {
+    content: '\f017';
+}
+
+.i.first:before {
+    content: '\f100';
+}
+
+.i.last:before {
+    content: '\f101';
+}
+
+.i.prev:before {
+    content: '\f104';
+}
+
+.i.next:before {
+    content: '\f105';
+}
+
+.i.ring:before {
+    content: '\f0a2';
+}
+
+.i.fullscreen:before {
+    content: '\f065';
+}
+
+.i.fullscreen.on:before {
+    content: '\f066';
+}
+
+.i.logout:before {
+    content: '\f011';
+}
+
+.i.setting:before {
+    content: '\f013';
+}
+
+.i.lock:before {
+    content: '\f023';
+}
+
+.i.unlock:before {
+    content: '\f09c';
+}
+
+.i.save:before {
+    content: '\f0c7';
+}
+.i.warn:before {
+    content: '\f05a';
+}

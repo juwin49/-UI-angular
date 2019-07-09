@@ -1,0 +1,165 @@
+{
+  "list0": [
+    {
+      "cardid": 123456,
+      "lname": "一号线",
+      "dept": "xxx",
+      "account": "fu",
+      "name": "fu",
+      "sex": 1,
+      "state": 1,
+      "rolename": "123"
+    },
+    {
+      "cardid": null,
+      "lname": null,
+      "dept": "测试",
+      "account": "randy",
+      "name": "randy",
+      "sex": 1,
+      "state": 1,
+      "rolename": "客服管理员"
+    },
+    {
+      "cardid": null,
+      "lname": null,
+      "dept": "xxx",
+      "account": "xxx",
+      "name": "xxx",
+      "sex": 1,
+      "state": null,
+      "rolename": null
+    },
+    {
+      "cardid": 130244287,
+      "lname": "一号线",
+      "dept": "技术部",
+      "account": "sirzjp",
+      "name": "zhang",
+      "sex": 1,
+      "state": 1,
+      "rolename": "设备管理员"
+    },
+    {
+      "cardid": 234,
+      "lname": "一号线",
+      "dept": "技术部",
+      "account": "12",
+      "name": "夺夺",
+      "sex": 1,
+      "state": 1,
+      "rolename": "设备调度员"
+    },
+    {
+      "cardid": 1223432,
+      "lname": "一号线",
+      "dept": "技术部",
+      "account": "admin",
+      "name": "梁思宁",
+      "sex": 1,
+      "state": 1,
+      "rolename": "super"
+    },
+    {
+      "cardid": 1325345,
+      "lname": "一号线",
+      "dept": "管理部",
+      "account": "guoxin",
+      "name": "郭鑫",
+      "sex": 1,
+      "state": 1,
+      "rolename": "票务管理员"
+    },
+    {
+      "cardid": 1195202751,
+      "lname": "一号线",
+      "dept": "技术部",
+      "account": "test",
+      "name": "陈小妍",
+      "sex": 0,
+      "state": 1,
+      "rolename": "客服管理员"
+    },
+    {
+      "cardid": 234,
+      "lname": "一号线",
+      "dept": "技术部",
+      "account": "12",
+      "name": "夺夺",
+      "sex": 1,
+      "state": 1,
+      "rolename": "设备调度员"
+    },
+    {
+      "cardid": 1223432,
+      "lname": "一号线",
+      "dept": "技术部",
+      "account": "admin",
+      "name": "梁思宁",
+      "sex": 1,
+      "state": 1,
+      "rolename": "super"
+    },
+    {
+      "cardid": 1325345,
+      "lname": "一号线",
+      "dept": "管理部",
+      "account": "guoxin",
+      "name": "郭鑫",
+      "sex": 1,
+      "state": 1,
+      "rolename": "票务管理员"
+    },
+    {
+      "cardid": 1195202751,
+      "lname": "一号线",
+      "dept": "技术部",
+      "account": "test",
+      "name": "陈小妍",
+      "sex": 0,
+      "state": 1,
+      "rolename": "客服管理员"
+    },
+    {
+      "cardid": 234,
+      "lname": "一号线",
+      "dept": "技术部",
+      "account": "12",
+      "name": "夺夺",
+      "sex": 1,
+      "state": 1,
+      "rolename": "设备调度员"
+    },
+    {
+      "cardid": 1223432,
+      "lname": "一号线",
+      "dept": "技术部",
+      "account": "admin",
+      "name": "梁思宁",
+      "sex": 1,
+      "state": 1,
+      "rolename": "super"
+    },
+    {
+      "cardid": 1325345,
+      "lname": "一号线",
+      "dept": "管理部",
+      "account": "guoxin",
+      "name": "郭鑫",
+      "sex": 1,
+      "state": 1,
+      "rolename": "票务管理员"
+    },
+    {
+      "cardid": 1195202751,
+      "lname": "一号线",
+      "dept": "技术部",
+      "account": "test",
+      "name": "陈小妍",
+      "sex": 0,
+      "state": 1,
+      "rolename": "客服管理员"
+    }
+  ],
+  "allcount": 20
+}

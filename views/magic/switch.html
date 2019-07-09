@@ -1,0 +1,17 @@
+<label class="switch"><input type="checkbox" ng-model="ischeck"/><i></i><span>可用开关</span></label>
+<label class="switch"><input type="checkbox" disabled/><i></i><span>禁用开关</span></label>
+<label class="switch"><input type="checkbox" checked disabled/><i></i><span>禁用开关</span></label><br/><br/>
+<hr/>
+<label class="checkbox"><input type="checkbox" ng-model="ischeck"/><i></i><span>可用选项</span></label>
+<label class="checkbox"><input type="checkbox" disabled/><i></i><span>禁用选择</span></label>
+<label class="checkbox"><input type="checkbox" checked disabled/><i></i><span>禁用选择</span></label><br/>
+您选择的是：<label class="label" ng-bind="ischeck"></label><br/>
+<hr>
+<label class="radio"><input type="radio" ng-model="radio" name="radio" value="苹果"
+                            disabled/><i></i><span>苹果</span></label>
+<label class="radio"><input type="radio" ng-model="radio" name="radio" value="西瓜" checked
+                            disabled/><i></i><span>西瓜</span></label>
+<label class="radio"><input type="radio" ng-model="radio" name="radio" value="橙子"/><i></i><span>橙子</span></label>
+<label class="radio"><input type="radio" ng-model="radio" name="radio" value="香蕉"/><i></i><span>香蕉</span></label><br/>
+您选择的是：<label class="label" ng-bind="radio"></label>
+<hr/>
