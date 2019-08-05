@@ -4,8 +4,8 @@ controller.
         var userinfo = cookie.get("userinfo");
         root.fix = true;
         scope.info = {
-            username: '',
-            password: ''
+            username: '1',
+            password: '1'
         };
         scope.loading = false;
         scope.fail = false;
